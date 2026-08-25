@@ -2,7 +2,7 @@ For two years of my studies I volunteered over twenty hours a week in [Ascend NT
 
 ## A drone that finds small things
 
-Team 2024 built for [SUAS](https://suas-competition.org/), a competition in Maryland where an autonomous drone flies a course, locates objects on the ground and delivers payloads to them. The perception group turns the drone's cameras and sensors into what it knows about its surroundings, and my corner of that was object detection.
+Team 2024 built for [SUAS](https://suas-competition.org/), a competition in Maryland where an autonomous drone flies a course, locates objects on the ground and delivers payloads to them. The perception group turns the drone's cameras, radar and other sensors into what it knows about its surroundings, and my corner of that was object detection.
 
 The hard part is scale. The drone searches from altitude, so a target on the ground is a handful of pixels in a high-resolution frame, and resizing the frame down to what a detection model expects erases the target entirely. The fix is slicing: cut each frame into tiles, run detection on every tile, and merge the results. The whole pipeline worked this way, and my part was the training side: I trained our YOLO-based detection model on sliced data, through a custom dataloader I wrote in Python that sliced the dataset on demand. There is a standard library for this, SAHI, but it fit our model and configuration poorly, and writing the slicing ourselves was simpler than bending the library to it.
 
