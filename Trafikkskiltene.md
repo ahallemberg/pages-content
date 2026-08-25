@@ -1,4 +1,4 @@
-Trafikkskiltene.no is a site for learning the Norwegian traffic signs, and the first real project I shipped: I built it when I was sixteen, to learn the signs before my own driving test. It is still live at [trafikkskiltene.no](https://trafikkskiltene.no), and its successor is [Veivett](https://pages.askhb.no/Veivett).
+Trafikkskiltene.no is a site for learning the Norwegian traffic signs, and the first real project I shipped: I built it when I was fifteen, to learn the signs before my tractor licence. It is still live at [trafikkskiltene.no](https://trafikkskiltene.no), and its successor is [Veivett](https://pages.askhb.no/Veivett).
 
 ## Built to pass my own test
 
