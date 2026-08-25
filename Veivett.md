@@ -2,7 +2,7 @@ Veivett is a study tool for the Norwegian driving theory test, and the successor
 
 ## Where it started
 
-When I was sixteen and about to take my own driving test, I built trafikkskiltene.no to learn the traffic signs. It was plain JavaScript and PHP on an Apache server, and it did one thing: show a sign, take a guess, reveal the answer. It found its audience through search, has passed 750,000 page views, and has earned advertising revenue every year since, with very little maintenance.
+When I was sixteen and about to take my own driving test, I built trafikkskiltene.no to learn the traffic signs. It was plain JavaScript and PHP on an Apache server, and it did one job: teach the signs. It found its audience through search, has passed 750,000 page views, and has earned advertising revenue every year since, with very little maintenance.
 
 It also showed me its own limits. The theory test covers far more than the signs, and on trafikkskiltene a wrong answer taught you nothing except that you were wrong. In 2026 I started over and built the tool I would have wanted: one that covers the whole syllabus and explains itself along the way. The name had to change with the scope, since "trafikkskiltene" literally means "the traffic signs". After checking the company register, the app stores and the domains, the rebuild became Veivett.
 
