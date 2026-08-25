@@ -1,5 +1,3 @@
-*Aug 2026 · 4 min read*
-
 I spent the summer of 2026 as an intern at Netlight, a Nordic technology consultancy. The internship lasted six weeks. I was on the data and AI side of the intern group, and was placed on a project for the World Food Programme's Innovation Accelerator together with one other intern.
 
 ## The project: temporary settlement detection for SKAI+
