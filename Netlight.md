@@ -1,4 +1,4 @@
-I spent the summer of 2026 as an intern at Netlight, a Nordic technology consultancy. The internship lasted six weeks. I was on the data and AI side of the intern group, and was placed on a project for the World Food Programme's Innovation Accelerator together with one other intern.
+I spent the summer of 2026 as an intern at [Netlight](https://www.netlight.com/), a Nordic technology consultancy, my second summer in consulting after [Computas](https://pages.askhb.no/Computas). I was on the data and AI side of the intern group, and was placed on a project for the World Food Programme's Innovation Accelerator together with one other intern.
 
 ## The project: temporary settlement detection for SKAI+
 [SKAI](https://innovation.wfp.org/project/SKAI) is WFP's platform for reading satellite imagery with machine learning instead of sending a team out to look. It started as a tool for assessing building damage after disasters, and it has grown since then. WFP's own project page mentions that the temporary settlement detection model under SKAI+ reached MVP stage and was planned for pilot deployment with country offices.
@@ -30,9 +30,9 @@ Since transfer to new areas was the original complaint, we brought in a second d
 Finally we added segmentation. A box is a poor description of a shelter footprint, especially when the shelter is not rectangular or sits at an angle to the image axes. Autolabelling masks for objects this small is not realistic, so I built a small web app that let the other interns contribute masks, and we trained a segmentation model on what came out of it.
 
 ## Results
-On held out regions that were never part of training, the new model found more than twice as many shelters at the default confidence threshold. Recall went up a lot and precision went up as well, which is the clearest sign that the labels really were the problem. The segmentation model gave footprints that were much tighter than boxes, especially on irregular shapes.
+On held out regions that were never part of training, the new model found more than twice as many shelters at the default confidence threshold. Recall went up a lot and precision went up as well, which is the clearest sign that the labels really were the problem; the exact figures stay with WFP. The segmentation model gave footprints that were much tighter than boxes, especially on irregular shapes.
 
-We did not get everything into production inside six weeks. The work was handed over with documentation, and the results looked good enough that I expect it to continue.
+We did not get everything into production in the time we had. The work was handed over with documentation, and the results looked good enough that I expect it to continue.
 
 ## What I learned
 The useful lesson was about diagnosis rather than technique. My instinct at the start was to reach for the model. Newer architecture, more capacity, better augmentation. The real bottleneck was sitting in the annotation files, and no amount of architecture work would have fixed it. Spending the first week looking at data instead of at training curves is probably the most transferable thing I took away.
